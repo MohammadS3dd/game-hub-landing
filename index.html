@@ -273,6 +273,31 @@
         </div>
       </div>
     </section>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap about-grid">
+        <div>
+          <h2 id="contact-title">تماس با ما</h2>
+          <p>پیام خود را بنویسید تا با شما تماس بگیریم.</p>
+        </div>
+        <form id="contact-form" class="surface contact-form">
+          <label>
+            نام
+            <input name="name" type="text" required maxlength="100" autocomplete="name">
+          </label>
+          <label>
+            تلفن یا ایمیل
+            <input name="contact" type="text" required maxlength="150" autocomplete="email">
+          </label>
+          <label>
+            پیام
+            <textarea name="message" required rows="5" maxlength="2000"></textarea>
+          </label>
+          <button type="submit" class="btn btn-lg" disabled aria-disabled="true">ارسال پیام</button>
+          <p class="form-note">فرم تماس به‌زودی فعال می‌شود.</p>
+          <p id="contact-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -287,5 +312,6 @@
       </nav>
     </div>
   </footer>
+  <script src="contact.js" defer></script>
 </body>
 </html>
